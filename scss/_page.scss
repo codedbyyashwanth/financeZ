@@ -300,3 +300,155 @@ header .hero_bg {
             transform: translateY(15px);
       }
 }
+
+
+// Brands Section
+.brands_section {
+      padding: 5rem 0;
+      background-color: $accent-color;
+
+      .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .brand_logo:not(:last-child), .brand_logo:not(:first-child) {
+                  margin: 0 1rem;
+            }
+
+            @media (max-width:600px) {
+                  flex-direction: column;
+
+                  .brand_logo {
+                        margin: 2rem 0 !important;
+
+                        img {
+                              transform: scale(1.2);
+                        }
+                  }
+            }
+      }
+}
+
+
+// Services Section 
+.services_section {
+      .column_up {
+            display: flex;
+            justify-content: space-between;
+
+            .text_container {
+                  .h2 {
+                        width: 100%;
+                        max-width: 400px;
+                  }
+            }
+      }
+
+      .card_container {
+            display: flex;
+            justify-content: right;
+
+            .card {
+                  width: 100%;
+                  max-width: 320px;
+                  border: 1px solid rgba(192, 192, 192, 0.2);
+                  padding: 2.6rem 2.4rem;
+                  transition: ease 0.4s;
+
+                  display: flex;
+                  justify-content: space-between;
+                  flex-direction: column;
+                  
+                  .line {
+                        width: 70px;
+                        height: 3px;
+                        background-color: #fff;
+                  }
+
+                  h3 {
+                        margin: 1.6rem 0;
+                        font-size: 1.6rem;
+                  }
+
+
+                  .arrow_btn {
+                        width: 50px;
+                        height: 50px;
+                        background-color: #fff;
+                        padding: 1rem;
+                        display: grid;
+                        place-content: center;
+                        text-decoration: none;
+                        margin-top: 5rem;
+                        place-self: self-end;
+                        transition: ease 0.4s;
+
+                        &:hover {
+                              background-color: $accent-color;
+                        }
+
+                        &:hover span{
+                              transform: rotate(-45deg) scale(1.2);
+                        }
+
+                        span {
+                              font-size: 1.8rem;
+                              transition: inherit;
+                              color: $primary-color;
+                        }
+                  }
+
+                  &:hover {
+                        background-color: rgba(233, 233, 233, 0.1);
+                  }
+            }
+      }
+
+      @media (max-width:1024px) and (min-width:900px) {
+            .card {
+                  padding: 2.6rem 1.2rem !important;
+            }
+      }
+
+      @media (max-width:900px) {
+            .column_up {
+                  flex-direction: column;
+
+                  .text_container {
+                        margin-bottom: 2rem;
+                  }
+            }
+
+            .card_container {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  justify-content: center;
+            }
+      }
+
+      @media (max-width:800px) {
+            .card_container {
+                  grid-template-columns: repeat(2, 1fr);
+                  place-items: center;
+
+                  .card {
+                        width: 100% !important;
+                        margin: 1rem 0;
+                  }
+            }
+      }
+
+      @media (max-width:650px) {
+            .card_container {
+                  grid-template-columns: repeat(1, 1fr);
+                  place-items: center;
+
+                  .card {
+                        width: 100% !important;
+                        margin: 1rem 0;
+                  }
+            }
+      }
+}

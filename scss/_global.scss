@@ -26,13 +26,17 @@ body {
       font-weight: 600;
 }
 
-.h1 {
+.h1, .h2 {
       font-size: clamp(2.4rem, 5vw, 4.5rem);
       margin: 1.4rem 0;
 
       span {
             color: $accent-color;
       }
+}
+
+.h2 {
+      font-size: clamp(2.2rem, 2vw, 2.6rem) !important;
 }
 
 .text {
@@ -71,4 +75,8 @@ body {
       &:hover span{
             transform: translateX(5px) scale(1.12);
       }
+}
+
+section {
+      padding: 6rem 0;
 }
