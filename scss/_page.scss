@@ -1,0 +1,302 @@
+
+// Header & It's Background Image
+header {
+      width: 100%;
+      background: url('../img/dark-pattern.png');
+      background-position: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+}
+
+// Full Screen Navbar 
+header nav {
+
+      .navigation, .mobile_navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.6rem 0;
+
+            .logo_container {
+                  h3 {
+                        font-size: 1.6rem;
+                        transition: ease 0.4s;
+                        cursor: pointer;
+
+                        &:hover {
+                              color: $accent-color;
+                        }
+                  }
+            }
+
+            .nav_links {
+                  margin-top: 5px;
+                  
+                  a {
+                        margin: 0 2rem;
+                        color: $secondary-color;
+                        text-decoration: none;
+                        transition: ease 0.4s;
+                        position: relative;
+                        display: inline-block;
+                        overflow: hidden;
+                        
+                        &:hover {
+                              color: $accent-color;
+                        }
+                  }
+
+                  a::after {
+                        content: '';
+                        position: absolute;
+                        top: 95%;
+                        left: 0%;
+                        transform: translateX(-110%);
+                        width: 70%;
+                        height: 2px;
+                        background-color: $accent-color;
+                        transition: ease 0.4s;
+                  }
+
+                  a:hover::after {
+                        transform: translateX(0%);
+                  }
+
+                  @media (max-width:850px) {
+                        a {
+                              margin: 0 1rem;
+                        }
+                  }
+
+                  @media (max-width:700px) {
+                        a {
+                              margin: 0 10px;
+                        }
+                  }
+            }
+
+            .nav_btn {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: #fafafa;
+                  text-decoration: none;
+            
+                  span {
+                        font-weight: 500;
+                  }
+            
+                  img {
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 6px;
+                        margin-top: 5px;
+                        transition: ease 0.4s;
+                  }
+
+                  span {
+                        margin-left: 6px;
+                        margin-top: 5px;
+                        transition: ease 0.4s;
+                  }
+                  
+                  &:hover {
+                        color: $accent-color;
+                  }
+            
+                  &:hover span{
+                        transform: translateX(3px) scale(1.12);
+                        color: $accent-color;
+                  }
+            }
+      }
+
+      .mobile_navigation {
+            display: none;
+      }
+}
+
+
+// Mobile Navbar
+header nav {
+      @media (max-width: 625px) {
+            .navigation {
+                  display: none;
+            }
+
+            .open {
+                  height: fit-content !important;
+                  border: 1px solid rgba(145, 145, 145, 0.2);
+            }
+
+            .mobile_navigation {
+                  display: flex;
+                  position: relative;
+
+                  #menu {
+                        font-size: 2rem;
+                  }
+
+                  .mobile_nav_links {
+                        position: absolute;
+                        height: 0;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $primary-color;
+                        border-radius: 10px;
+                        z-index: 1000;
+
+                        a {
+                              margin: 1rem 0;
+                              color: $secondary-color;
+                              text-decoration: none;
+                              transition: ease 0.4s;
+                              position: relative;
+                              text-align: center;
+                              font-size: 1.1rem;
+                              overflow: hidden;
+                              
+                              &:hover {
+                                    color: $accent-color;
+                              }
+                        }
+      
+                        a::after {
+                              content: '';
+                              position: absolute;
+                              top: 95%;
+                              left: 0%;
+                              transform: translateX(-110%);
+                              width: 70%;
+                              height: 2px;
+                              background-color: $accent-color;
+                              transition: ease 0.4s;
+                        }
+
+                        a:last-child {
+                              &::after {
+                                    display: none;
+                              }
+                        }
+      
+                        a:hover::after {
+                              transform: translateX(0%);
+                        }
+                  }
+            }
+      }
+}
+
+
+// Hero Background Section
+header .hero_bg {
+
+      .hero_bg_container {
+            width: 100%;
+            height: 100%;
+            min-height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .text_container {
+                  width: 50%;
+                  .primary_btn {
+                        margin-top: 1.6rem;
+                  }
+            }
+
+            .img_container {
+                  margin-left: 2rem;
+                  position: relative;
+
+                  img {
+                        width: 100%;
+                        animation: cardAnimation linear 4s infinite alternate;
+                  }
+
+                  .circle_bg {
+                        position: absolute;
+                        top: 50%;
+                        right: -30%;
+                        width: 550px;
+                        height: 550px;
+                        background-color: $accent-color;
+                        border-radius: 50%;
+                        z-index: -1;
+                        transform: translateY(-50%);
+                  }
+            }
+
+            @media (max-width:1000px) {
+                  .text_container {
+                        width: 70%;
+                  }
+
+                  .img_container {
+                        .circle_bg {
+                              width: 450px;
+                              height: 450px;
+                        }
+                  }
+            }
+
+            @media (max-width:900px) {
+                  .text_container {
+                        width: 90%;
+                  }
+
+                  .img_container {
+                        .circle_bg {
+                              width: 400px;
+                              height: 400px;
+                        }
+                  }
+            }
+
+            @media (max-width:700px) {
+                  flex-direction: column;
+                  padding: 6rem 0;
+
+                  .text_container {
+                        width: 100%;
+                  }
+
+                  .img_container {
+                        margin-top: 40%;
+                        margin-left: 0 !important;
+
+                        img {
+                              width: 110% !important;
+                        }
+
+                        .circle_bg {
+                              width: 450px;
+                              height: 450px;
+                        }
+                  }
+            }
+
+            @media (max-width:500px) {
+                  .circle_bg {
+                        width: 350px !important;
+                        height: 350px !important;
+                  }
+            }
+      }
+}
+
+@keyframes cardAnimation {
+      from {
+            transform: translateY(-15px);
+      }
+      to {
+            transform: translateY(15px);
+      }
+}
