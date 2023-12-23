@@ -452,3 +452,65 @@ header .hero_bg {
             }
       }
 }
+
+
+// Benefits Section
+.benefits_section {
+      .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .text_container {
+                  width: 35%;
+            }
+
+            .img_container {
+                  width: 50%;
+                  img {
+                        width: 100%;
+                  }
+            }
+
+            .counter_container {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin-top: 3rem;
+                  width: 100%;
+                  max-width: 500px;
+
+                  .items {
+                        text-align: center;
+
+                        .count {
+                              font-size: 2rem;
+
+                              span {
+                                    color: $accent-color;
+                              }
+                        }
+
+                        .count_text {
+                              color: $accent-color;
+                              font-size: 0.95rem;
+                              font-weight: 600;
+                        }
+                  }
+            }
+
+            @media (max-width:830px) {
+                  flex-direction: column;
+
+                  .text_container {
+                        width: 100% !important;
+                  }
+
+                  .img_container {
+                        width: 100% !important;
+                        margin-top: 4rem;
+                  }
+            }
+      }
+}

@@ -58,6 +58,7 @@ body {
 }
 .primary_btn h4 {
   font-weight: 600;
+  color: #151515;
 }
 .primary_btn span {
   margin-left: 6px;
@@ -439,5 +440,54 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
   .services_section .card_container .card {
     width: 100% !important;
     margin: 1rem 0;
+  }
+}
+
+.benefits_section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefits_section .container .text_container {
+  width: 35%;
+}
+.benefits_section .container .img_container {
+  width: 50%;
+}
+.benefits_section .container .img_container img {
+  width: 100%;
+}
+.benefits_section .container .counter_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 500px;
+}
+.benefits_section .container .counter_container .items {
+  text-align: center;
+}
+.benefits_section .container .counter_container .items .count {
+  font-size: 2rem;
+}
+.benefits_section .container .counter_container .items .count span {
+  color: #CBFC01;
+}
+.benefits_section .container .counter_container .items .count_text {
+  color: #CBFC01;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+@media (max-width: 830px) {
+  .benefits_section .container {
+    flex-direction: column;
+  }
+  .benefits_section .container .text_container {
+    width: 100% !important;
+  }
+  .benefits_section .container .img_container {
+    width: 100% !important;
+    margin-top: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
