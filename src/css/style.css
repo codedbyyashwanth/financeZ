@@ -79,6 +79,40 @@ section {
   padding: 6rem 0;
 }
 
+.nav_btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  color: #fafafa;
+  text-decoration: none;
+}
+.nav_btn span {
+  font-weight: 500;
+}
+.nav_btn h4 {
+  display: inline;
+}
+.nav_btn img {
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  margin-top: 5px;
+  transition: ease 0.4s;
+}
+.nav_btn span {
+  margin-left: 6px;
+  margin-top: 5px;
+  transition: ease 0.4s;
+}
+.nav_btn:hover {
+  color: #CBFC01;
+}
+.nav_btn:hover span {
+  transform: translateX(3px) scale(1.12);
+  color: #CBFC01;
+}
+
 header {
   width: 100%;
   background: url("../img/dark-pattern.png");
@@ -140,35 +174,6 @@ header nav .navigation .nav_links a:hover::after, header nav .mobile_navigation 
   header nav .navigation .nav_links a, header nav .mobile_navigation .nav_links a {
     margin: 0 10px;
   }
-}
-header nav .navigation .nav_btn, header nav .mobile_navigation .nav_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fafafa;
-  text-decoration: none;
-}
-header nav .navigation .nav_btn span, header nav .mobile_navigation .nav_btn span {
-  font-weight: 500;
-}
-header nav .navigation .nav_btn img, header nav .mobile_navigation .nav_btn img {
-  width: 30px;
-  height: 30px;
-  margin-left: 6px;
-  margin-top: 5px;
-  transition: ease 0.4s;
-}
-header nav .navigation .nav_btn span, header nav .mobile_navigation .nav_btn span {
-  margin-left: 6px;
-  margin-top: 5px;
-  transition: ease 0.4s;
-}
-header nav .navigation .nav_btn:hover, header nav .mobile_navigation .nav_btn:hover {
-  color: #CBFC01;
-}
-header nav .navigation .nav_btn:hover span, header nav .mobile_navigation .nav_btn:hover span {
-  transform: translateX(3px) scale(1.12);
-  color: #CBFC01;
 }
 header nav .mobile_navigation {
   display: none;
@@ -452,7 +457,7 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
   width: 35%;
 }
 .benefits_section .container .img_container {
-  width: 50%;
+  width: 45%;
 }
 .benefits_section .container .img_container img {
   width: 100%;
@@ -489,5 +494,97 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
   .benefits_section .container .img_container {
     width: 100% !important;
     margin-top: 4rem;
+  }
+}
+
+.service2_section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service2_section .container .text_container {
+  width: 40%;
+}
+.service2_section .container .text_container .primary_btn {
+  margin-top: 2rem;
+}
+.service2_section .container .img_container {
+  width: 45%;
+}
+.service2_section .container .img_container img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .service2_section .container .text_container {
+    width: 50% !important;
+  }
+  .service2_section .container .img_container {
+    width: 45% !important;
+  }
+}
+@media (max-width: 700px) {
+  .service2_section .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .service2_section .container .text_container {
+    width: 100% !important;
+  }
+  .service2_section .container .img_container {
+    margin-top: 4rem;
+    width: 100% !important;
+  }
+}
+
+.features_section .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.features_section .container .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding: 3rem 2.6rem;
+  transition: ease 0.4s;
+  border: 1px solid rgba(192, 192, 192, 0.1);
+}
+.features_section .container .items .nav_btn {
+  margin-top: 2rem;
+}
+.features_section .container .items .icon_container {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  text-decoration: none;
+  transition: ease 0.4s;
+}
+.features_section .container .items .icon_container span {
+  font-size: 1.8rem;
+  transition: inherit;
+  color: #151515;
+}
+.features_section .container .items:hover .icon_container {
+  background-color: #CBFC01;
+}
+.features_section .container .items:hover {
+  background-color: rgba(233, 233, 233, 0.1);
+}
+@media (max-width: 1100px) and (min-width: 900px) {
+  .features_section .container .items {
+    padding: 3rem 1.6rem !important;
+  }
+}
+@media (max-width: 900px) {
+  .features_section .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .features_section .container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -81,3 +81,42 @@ body {
 section {
       padding: 6rem 0;
 }
+
+.nav_btn {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      color: #fafafa;
+      text-decoration: none;
+
+      span {
+            font-weight: 500;
+      }
+
+      h4 {
+            display: inline;
+      }
+
+      img {
+            width: 30px;
+            height: 30px;
+            margin-left: 6px;
+            margin-top: 5px;
+            transition: ease 0.4s;
+      }
+
+      span {
+            margin-left: 6px;
+            margin-top: 5px;
+            transition: ease 0.4s;
+      }
+      
+      &:hover {
+            color: $accent-color;
+      }
+
+      &:hover span{
+            transform: translateX(3px) scale(1.12);
+            color: $accent-color;
+      }
+}
