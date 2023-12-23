@@ -587,4 +587,145 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
   .features_section .container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.testimonial_section {
+  background-color: #CBFC01;
+  background-image: url("../img/pattern.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 90vh;
+}
+.testimonial_section .container .text_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media (max-width: 640px) {
+  .testimonial_section .container .text_container {
+    flex-direction: column;
+  }
+  .testimonial_section .container .text_container .text_content {
+    margin-bottom: 2rem;
+  }
+}
+.testimonial_section .container .text_container .text_content {
+  width: 100%;
+  max-width: 600px;
+}
+.testimonial_section .container .text_container .text_content .h1 {
+  margin-bottom: 0 !important;
+}
+.testimonial_section .container .text_container .text_content * {
+  color: #151515 !important;
+}
+.testimonial_section .container .text_container .arrows_content {
+  display: flex;
+  align-items: center;
+}
+.testimonial_section .container .text_container .arrows_content .swiper-button-next::after, .testimonial_section .container .text_container .arrows_content .swiper-button-prev::after {
+  content: "";
+  display: none !important;
+}
+.testimonial_section .container .text_container .arrows_content .icon_container {
+  all: unset !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: 2px solid #151515 !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  margin-left: 1rem !important;
+  cursor: pointer !important;
+  transition: ease 0.4s !important;
+  color: #151515 !important;
+}
+.testimonial_section .container .text_container .arrows_content .icon_container:hover {
+  background-color: #151515 !important;
+  color: #fff !important;
+}
+.testimonial_section .container .text_container .arrows_content .icon_container span {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+  font-size: 1.8rem;
+  color: inherit !important;
+}
+.testimonial_section .mySwiper {
+  margin-top: 3rem;
+}
+@media (max-width: 640px) {
+  .testimonial_section .mySwiper {
+    padding: 0 1rem;
+  }
+}
+.testimonial_section .mySwiper .swiper-slide {
+  background-color: #151515;
+  padding: 3rem 2.6rem;
+}
+.testimonial_section .mySwiper .swiper-slide .text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.testimonial_section .mySwiper .swiper-slide .profile_container {
+  display: flex;
+  align-items: center;
+}
+.testimonial_section .mySwiper .swiper-slide .profile_container h3 {
+  font-size: 1rem;
+}
+.testimonial_section .mySwiper .swiper-slide .profile_container .text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.testimonial_section .mySwiper .swiper-slide .profile_container .img_container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+.testimonial_section .mySwiper .swiper-slide .profile_container .img_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner_section .container {
+  display: flex;
+  justify-content: center;
+}
+.banner_section .container .banner {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #CBFC01;
+  padding: 3rem;
+}
+.banner_section .container .banner h1 {
+  color: #151515;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner_section .container .banner .primary_btn {
+  border-color: #151515 !important;
+  background-color: #151515 !important;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.banner_section .container .banner .primary_btn h4 {
+  color: #CBFC01 !important;
+}
+.banner_section .container .banner .primary_btn:hover {
+  background-color: #CBFC01 !important;
+}
+.banner_section .container .banner .primary_btn:hover h4 {
+  color: #151515 !important;
 }/*# sourceMappingURL=style.css.map */
