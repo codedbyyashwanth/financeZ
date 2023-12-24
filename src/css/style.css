@@ -728,4 +728,102 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
 }
 .banner_section .container .banner .primary_btn:hover h4 {
   color: #151515 !important;
+}
+
+footer {
+  width: 100%;
+  background: url("../img/dark-pattern.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 4rem 0 2rem 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .info {
+    max-width: -moz-fit-content !important;
+    max-width: fit-content !important;
+    margin-right: 0 !important;
+    margin-bottom: 2rem;
+  }
+  footer .container .links {
+    margin: 1rem 0 !important;
+  }
+  footer .container .subscribe {
+    margin: 1rem 0 !important;
+  }
+}
+footer .container .info {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 1rem;
+}
+footer .container .info p {
+  margin: 1rem 0;
+}
+footer .container .info .social_icons {
+  margin-top: 2rem;
+}
+footer .container .info .social_icons img {
+  margin-right: 1rem;
+}
+footer .container .links {
+  margin: 0 2rem;
+}
+footer .container .links h2 {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+footer .container .links ul li {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+footer .container .links ul li:hover {
+  color: #CBFC01;
+}
+footer .container .subscribe {
+  margin-left: 1rem;
+}
+footer .container .subscribe h2 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+footer .container .subscribe .input_group {
+  display: flex;
+  align-items: stretch;
+  margin: 1rem 0;
+}
+footer .container .subscribe .input_group input {
+  width: 100%;
+  max-width: 250px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+footer .container .subscribe .text {
+  width: 100%;
+  max-width: 400px;
+}
+
+footer hr {
+  margin: 3rem 0 2rem 0;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+footer .foot_text {
+  padding: 0 1rem;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
