@@ -64,6 +64,7 @@ body {
   margin-left: 6px;
   margin-top: 1px;
   transition: ease 0.4s;
+  color: #151515;
 }
 .primary_btn:hover {
   background-color: #151515;
@@ -132,6 +133,9 @@ header nav .navigation .logo_container h3, header nav .mobile_navigation .logo_c
   font-size: 1.6rem;
   transition: ease 0.4s;
   cursor: pointer;
+}
+header nav .navigation .logo_container h3 span, header nav .mobile_navigation .logo_container h3 span {
+  color: #CBFC01;
 }
 header nav .navigation .logo_container h3:hover, header nav .mobile_navigation .logo_container h3:hover {
   color: #CBFC01;
@@ -337,6 +341,35 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.brands_section .container .brand_logo {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 640px) {
+  .brands_section .container .brand_logo {
+    width: 100px !important;
+    height: 60px !important;
+  }
+  .brands_section .container .brand_logo:nth-child(1) img {
+    height: 60px;
+  }
+  .brands_section .container .brand_logo:nth-child(4) img {
+    height: 60px;
+  }
+}
+.brands_section .container .brand_logo img {
+  width: 100%;
+}
+.brands_section .container .brand_logo:nth-child(1) {
+  width: auto !important;
+  height: 100% !important;
+}
+.brands_section .container .brand_logo:nth-child(4) {
+  width: auto !important;
+  height: 100% !important;
+}
 .brands_section .container .brand_logo:not(:last-child), .brands_section .container .brand_logo:not(:first-child) {
   margin: 0 1rem;
 }
@@ -394,6 +427,7 @@ header .hero_bg .hero_bg_container .img_container .circle_bg {
   margin-top: 5rem;
   place-self: self-end;
   transition: ease 0.4s;
+  cursor: pointer;
 }
 .services_section .card_container .card .arrow_btn:hover {
   background-color: #CBFC01;
@@ -771,8 +805,10 @@ footer .container .info p {
 }
 footer .container .info .social_icons {
   margin-top: 2rem;
+  cursor: pointer;
 }
 footer .container .info .social_icons img {
+  width: 25px;
   margin-right: 1rem;
 }
 footer .container .links {

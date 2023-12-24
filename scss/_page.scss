@@ -24,6 +24,10 @@ header nav {
                         transition: ease 0.4s;
                         cursor: pointer;
 
+                        span {
+                              color: $accent-color;
+                        }
+
                         &:hover {
                               color: $accent-color;
                         }
@@ -280,6 +284,44 @@ header .hero_bg {
             justify-content: space-between;
             flex-wrap: wrap;
 
+            .brand_logo {
+                  width: 200px;
+                  height: 200px;
+                  display: grid;
+                  place-items: center;
+
+                  @media (max-width:640px) {
+                        width: 100px !important;
+                        height: 60px !important;
+
+                        &:nth-child(1) {
+                              img {
+                                    height: 60px;
+                              }
+                        }
+      
+                        &:nth-child(4) {
+                              img {
+                                    height: 60px;
+                              }
+                        }
+                  }
+
+                  img {
+                        width: 100%;
+                  }
+
+                  &:nth-child(1) {
+                        width: auto !important;
+                        height: 100% !important;
+                  }
+
+                  &:nth-child(4) {
+                        width: auto !important;
+                        height: 100% !important;
+                  }
+            }
+
             .brand_logo:not(:last-child), .brand_logo:not(:first-child) {
                   margin: 0 1rem;
             }
@@ -351,6 +393,7 @@ header .hero_bg {
                         margin-top: 5rem;
                         place-self: self-end;
                         transition: ease 0.4s;
+                        cursor: pointer;
 
                         &:hover {
                               background-color: $accent-color;
@@ -810,8 +853,10 @@ footer {
 
                   .social_icons {
                         margin-top: 2rem;
+                        cursor: pointer;
 
                         img {
+                              width: 25px;
                               margin-right: 1rem;
                         }
                   }
